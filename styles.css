@@ -13,15 +13,12 @@ body {
 	align-items: center;
 }
 
-#keypad {
+.keypad {
 	display: flex;
 	flex-direction: column;
 }
 
-.row1,
-.row2,
-.row3,
-.row4 {
+.row {
 	display: flex;
 	/* border-style: solid;
 	border-color: red; */
@@ -31,14 +28,20 @@ body {
 	margin-bottom: 5px;
 }
 
-.button {
-	display: flex;
-	border-style: solid;
-	padding: 10px;
-	width: 5vw;
-	height: 5vw;
-	justify-content: center;
-	align-items: center;
+button {
 	font-size: large;
 	font-weight: bold;
+	width: 5vw;
+	height: 5vw;
+	border-radius: 8px;
+	border-style: solid;
+}
+
+.big-button {
+	font-size: large;
+	font-weight: bold;
+	width: 11vw;
+	height: 5vw;
+	border-radius: 8px;
+	border-style: solid;
 }
